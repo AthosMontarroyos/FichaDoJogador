@@ -49,16 +49,12 @@
       <div class="two-col">
         <div class="icard">
           <h3>Lado Visível</h3>
-          <p>Age de forma charmosa, flertando e sorrindo com um tom levemente brincalhão.
-          Usa máscaras de garota inocente com frieza calculada para conseguir o que deseja.
-          Manipuladora e prática, planeja cada passo com antecedência.</p>
+          <p>Age de forma charmosa, flertando e sorrindo com um tom levemente brincalhão.</p>
         </div>
         <div class="icard">
           <h3>Lado Oculto</h3>
           <p>Profundamente triste e solitária. Carrega um ódio latente pela humanidade, mas não
-          age por crueldade pura — possui um código moral próprio e distorcido. Por baixo de tudo,
-          existe um lado que ainda quer redenção, expresso no carinho que sente por animais,
-          especialmente gatos.</p>
+          age por crueldade pura — possui um código moral próprio e distorcido.</p>
         </div>
       </div>
     </section>
@@ -209,7 +205,7 @@
               </div>
               <h3 class="zbname">{{ bullets[current].name }}</h3>
               <p class="zbeffect">{{ bullets[current].effect }}</p>
-              <div v-if="bullets[current].note" class="zbnote">⚠ {{ bullets[current].note }}</div>
+              <div v-if="bullets[current].note" class="zbnote" v-html="'⚠ ' + bullets[current].note"></div>
             </div>
           </transition>
 
@@ -293,7 +289,7 @@ const bullets = [
   { number:9,  name:'Tet',       hebrew:'九の弾テット',           effect:'Invoca versões passadas de Kurumi como clones com mente própria e livre-arbítrio parcial, capazes de agir de forma completamente independente.' },
   { number:10, name:'Yod',       hebrew:'十の弾ユッド',           effect:'Drena o tempo de vida do alvo e transfere para Kurumi, reabastecendo sua força vital.' },
   { number:11, name:'Yod Aleph', hebrew:'十一の弾ユッド・アレフ',  effect:'Cria uma zona de devoração temporal que absorve a força vital de todos dentro da área, transferindo-a para Kurumi.' },
-  { number:12, name:'Yod Bet',   hebrew:'十二の弾ユッド・ベート',  effect:'A bala mais poderosa. Envia a consciência para qualquer ponto do passado. O custo recai sobre o clone que a dispara — a Kurumi original permanece intacta.', note:'Kurumi ainda não acumulou força vital suficiente. Objetivo de longo prazo no RP.' },
+  { number:12, name:'Yod Bet',   hebrew:'十二の弾ユッド・ベート',  effect:'A bala mais poderosa. Envia a consciência para qualquer ponto do passado. O custo cai em cima de quem a dispara, seja a própria Kurumi ou um clone.', note:'<strong>Custo de uso:</strong> é equivalente à "vida útil" de uma Entidade – ou seja, ela gasta uma quantidade de energia espiritual semelhante ao poder vital inteiro de uma Entidade cada vez que dispara essa bala.' },
 ]
 
 function prev()  { dir.value='sr'; current.value=(current.value-1+12)%12 }
