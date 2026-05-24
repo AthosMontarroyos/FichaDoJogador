@@ -165,9 +165,6 @@
       <div class="bh"><span class="bn">04</span><h2>Zafkiel — O Anjo do Tempo</h2></div>
 
       <div class="zdesc-wrap">
-        <div class="zdesc-gif">
-          <img src="@/assets/kurumi/Zafkiel.gif" alt="Zafkiel" />
-        </div>
         <p class="zdesc">
           Anjo nascido do tecido do tempo. Se manifesta como um relógio gigante acompanhado de
           dois revólveres antigos — um mosquete (ponteiro dos minutos) e uma pistola flintlock
@@ -176,6 +173,9 @@
           o mesmo: força vital de Kurumi, representada pelo relógio em seu olho esquerdo
           girando no sentido horário.
         </p>
+        <div class="zdesc-gif">
+          <img src="@/assets/kurumi/Zafkiel.gif" alt="Zafkiel" />
+        </div>
       </div>
 
       <!-- LAYOUT RELÓGIO + INFO -->
@@ -368,9 +368,9 @@ function goTo(i: number) { dir.value=i>current.value?'sl':'sr'; current.value=i 
 .tb em { color:var(--gold); font-style:italic; }
 .tb strong { color:var(--text-h); }
 
-.zdesc-wrap { display:grid; grid-template-columns:1fr 280px; gap:24px; margin-bottom:32px; align-items:start; }
-.zdesc { grid-column:1; font-size:15px; color:var(--text); line-height:1.7; max-width:720px; }
-.zdesc-gif { grid-column:2; border-radius:8px; overflow:hidden; border:1px solid var(--gold-border); }
+.zdesc-wrap { display:grid; grid-template-columns:1fr 200px; gap:16px; margin-bottom:32px; align-items:start; }
+.zdesc { font-size:15px; color:var(--text); line-height:1.7; max-width:720px; }
+.zdesc-gif { border-radius:8px; overflow:hidden; border:1px solid var(--gold-border); }
 .zdesc-gif img { width:100%; height:auto; display:block; }
 .zaflayout { display:grid; grid-template-columns:300px 1fr; gap:48px;
   align-items:center; margin-bottom:32px; }
@@ -446,8 +446,8 @@ function goTo(i: number) { dir.value=i>current.value?'sl':'sr'; current.value=i 
 }
 @media(max-width:700px){
   .zdesc-wrap { grid-template-columns:1fr; }
-  .zdesc { grid-column:1; margin-top:-24px; }
-  .zdesc-gif { grid-column:1; max-width:140px; margin-left:auto; margin-top:-96px; transform:translateX(-12px); }
+  .zdesc { margin-top:-24px; }
+  .zdesc-gif { max-width:140px; margin-left:auto; margin-top:-96px; transform:translateX(-12px); order:-1; }
 }
 @media(max-width:600px){
   .kp { padding:0 16px 60px; }
