@@ -431,7 +431,8 @@ function goTo(i: number) { dir.value=i>current.value?'sl':'sr'; current.value=i 
 
 @media(max-width:900px){
   .hero { grid-template-columns:1fr; min-height:auto; margin:0 0 48px; }
-  .hero-img-wrap { height:280px; }
+  .hero-img-wrap { aspect-ratio:16/9; }
+  .hero-img-wrap img { object-position:center; }
   .hero-img-fade { background:linear-gradient(to bottom,transparent 50%,var(--bg) 100%); }
   .hero-content { padding:24px; }
   .hero-name { font-size:56px; }
@@ -445,7 +446,7 @@ function goTo(i: number) { dir.value=i>current.value?'sl':'sr'; current.value=i 
 }
 @media(max-width:700px){
   .zdesc-wrap { grid-template-columns:1fr; }
-  .zdesc-gif { max-width:120px; margin:0 auto; }
+  .zdesc-gif { max-width:200px; margin:0 auto; }
 }
 @media(max-width:600px){
   .kp { padding:0 16px 60px; }
