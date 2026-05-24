@@ -1,11 +1,11 @@
 {
-  "name": "ficha-kurrumi-smp",
+  "name": "fichadojogador",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc -b && vite build",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -15,9 +15,7 @@
   "devDependencies": {
     "@types/node": "^24.12.3",
     "@vitejs/plugin-vue": "^6.0.6",
-    "@vue/tsconfig": "^0.9.1",
     "typescript": "~6.0.2",
-    "vite": "^8.0.12",
-    "vue-tsc": "^3.2.8"
+    "vite": "^8.0.12"
   }
 }
