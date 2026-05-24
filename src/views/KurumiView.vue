@@ -446,8 +446,8 @@ function goTo(i: number) { dir.value=i>current.value?'sl':'sr'; current.value=i 
 }
 @media(max-width:700px){
   .zdesc-wrap { grid-template-columns:1fr; }
-  .zdesc { grid-column:1; }
-  .zdesc-gif { grid-column:1; max-width:200px; margin-left:auto; }
+  .zdesc { grid-column:1; margin-top:-24px; }
+  .zdesc-gif { grid-column:1; max-width:140px; margin-left:auto; margin-top:-96px; transform:translateX(-12px); }
 }
 @media(max-width:600px){
   .kp { padding:0 16px 60px; }

@@ -28,7 +28,7 @@
           <span class="meta-div">·</span>
           <span class="meta-item">
             <span class="meta-label">Idade</span>
-            <span class="meta-value">18 anos</span>
+            <span class="meta-value">17 anos</span>
           </span>
         </div>
       </div>
