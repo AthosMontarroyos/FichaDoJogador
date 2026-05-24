@@ -1,0 +1,29 @@
+Sessão iniciada em: 2026-05-23
+Status: Configurado
+Descrição: 
+- Criada pasta opencode data/ e INSTRUCITIONS.MD
+- Configurado .opencode/opencode.json
+- Inicializado repositório git "Ficha Kurrumi SMP" (branch main)
+- Scaffolded Vue 3 + TypeScript + Vite
+- README.md criado com tecnologias usadas (Vue.js, TypeScript, Vite, JavaScript)
+- Paleta de cores dark crimson (#640A15, #4B040E, #3A0208, #320308, #270205) aplicada como tema escuro padrão no style.css, com modo claro complementar em tons rosados
+- Estrutura do site montada baseada em INSTRUCOES_SITE.md:
+  - Instalado vue-router@4
+  - Criado src/router/index.ts, src/views/HomeView.vue, src/views/KurumiView.vue
+  - Atualizado src/App.vue (RouterView) e src/main.ts (use router)
+  - Removido scaffold default (HelloWorld, SVGs)
+  - Configurado alias @ no vite.config.ts
+  - Placeholders de imagem criados em src/assets/kurumi/
+  - Build verificado: ok (vue-tsc + vite build)
+- REFORMULAÇÃO COMPLETA baseada nas instruções revisadas:
+  - Nova paleta: preto #19171b + vermelho sangue #5d0018 + dourado #d29f22
+  - Novas fontes: Cormorant Garamond (display) + DM Sans (corpo) no index.html
+  - HomeView reformulada: top-bar, perfil jogador, grid de fichas com respostas, seção de regras, cards personagens
+  - KurumiView reformulada: hero com gradient, nav âncoras, timeline lore com markers, data-grid de gostos/desgostos/medos/hobbies, carrossel com bullet-note + quick-list grid, seção clones expandida, objetivo com gradient
+  - style.css simplificado com paleta fixa (sem light/dark mode)
+- REFORMULAÇÃO v2 (instruções finais):
+  - ZafkielClock.vue movido para src/components/
+  - KurumiView reformulado: sem carrossel de imagens, layout com ZafkielClock + info lateral, bullet data sem imagens, transições sl/sr
+  - HomeView avatar trocado para img (discord.jpg)
+  - style.css: scrollbar 5px, gold-dim 0.12, border 0.13
+  - TypeScript fixes no ZafkielClock (tipagens, props, setAttribute)
