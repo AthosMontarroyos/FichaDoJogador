@@ -221,8 +221,8 @@ import { RouterLink } from 'vue-router'
   border:1px solid var(--border); background:var(--bg-card);
   transition:border-color .3s, transform .2s; text-decoration:none; }
 .character-card:hover { border-color:var(--gold-border); transform:translateY(-4px); }
-.card-img-wrap { position:relative; aspect-ratio:3/4; overflow:hidden; }
-.card-img-wrap img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .4s; }
+.card-img-wrap { position:relative; overflow:hidden; }
+.card-img-wrap img { width:100%; display:block; transition:transform .4s; }
 .character-card:hover .card-img-wrap img { transform:scale(1.04); }
 .card-overlay { position:absolute; inset:0; background:rgba(25,23,27,.7);
   display:flex; align-items:center; justify-content:center;

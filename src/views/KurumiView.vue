@@ -370,7 +370,7 @@ function goTo(i: number) { dir.value=i>current.value?'sl':'sr'; current.value=i 
 
 .zdesc-wrap { display:grid; grid-template-columns:1fr 280px; gap:24px; margin-bottom:32px; align-items:start; }
 .zdesc { font-size:15px; color:var(--text); line-height:1.7; max-width:720px; }
-.zdesc-gif { border-radius:8px; overflow:hidden; border:1px solid var(--gold-border); margin-top:-24px; }
+.zdesc-gif { border-radius:8px; overflow:hidden; border:1px solid var(--gold-border); }
 .zdesc-gif img { width:100%; height:auto; display:block; }
 .zaflayout { display:grid; grid-template-columns:300px 1fr; gap:48px;
   align-items:center; margin-bottom:32px; }
