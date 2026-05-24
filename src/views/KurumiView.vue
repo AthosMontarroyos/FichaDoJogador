@@ -368,7 +368,7 @@ function goTo(i: number) { dir.value=i>current.value?'sl':'sr'; current.value=i 
 .tb em { color:var(--gold); font-style:italic; }
 .tb strong { color:var(--text-h); }
 
-.zdesc-wrap { display:grid; grid-template-columns:1fr 280px; gap:24px; margin-bottom:32px; align-items:start; margin-top:-12px; }
+.zdesc-wrap { display:grid; grid-template-columns:1fr 280px; gap:24px; margin-bottom:32px; align-items:start; }
 .zdesc { grid-column:1; font-size:15px; color:var(--text); line-height:1.7; max-width:720px; }
 .zdesc-gif { grid-column:2; border-radius:8px; overflow:hidden; border:1px solid var(--gold-border); }
 .zdesc-gif img { width:100%; height:auto; display:block; }
