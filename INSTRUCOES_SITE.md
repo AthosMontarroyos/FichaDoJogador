@@ -4,7 +4,7 @@
 - Vue 3 (Composition API — `<script setup>`)
 - Vue Router 4
 - Google Fonts: **Cormorant Garamond** + **DM Sans**
-- CSS puro com variáveis (paleta abaixo)
+- CSS puro com variáveis
 - Sem Tailwind, sem UI libs externas
 
 ---
@@ -55,8 +55,8 @@ body {
 }
 
 h1, h2, h3 { font-family: var(--font-display); color: var(--text-h); font-weight: 600; margin: 0; }
-p { margin: 0; }
-a { color: var(--gold); text-decoration: none; }
+p  { margin: 0; }
+a  { color: var(--gold); text-decoration: none; }
 a:hover { opacity: 0.8; }
 
 ::-webkit-scrollbar { width: 5px; }
@@ -71,9 +71,9 @@ a:hover { opacity: 0.8; }
 ```
 src/
 ├── assets/kurumi/
-│   └── profile.jpg               ← foto principal da Kurumi
+│   └── profile.jpg
 ├── components/
-│   └── ZafkielClock.vue          ← relógio (arquivo entregue separado)
+│   └── ZafkielClock.vue
 ├── router/index.js
 ├── views/
 │   ├── HomeView.vue
@@ -83,16 +83,13 @@ src/
 └── style.css
 ```
 
-> As imagens das balas foram substituídas pelo relógio animado.
-> Não é necessário nenhum arquivo de imagem para o Zafkiel.
-
 ---
 
 ## `src/router/index.js`
 
 ```js
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView  from '../views/HomeView.vue'
+import HomeView   from '../views/HomeView.vue'
 import KurumiView from '../views/KurumiView.vue'
 
 export default createRouter({
@@ -142,7 +139,6 @@ createApp(App).use(router).mount('#app')
       <span class="bar-line"/>
     </div>
 
-    <!-- PERFIL -->
     <section class="profile">
       <div class="profile-avatar">YK</div>
       <div class="profile-info">
@@ -167,7 +163,6 @@ createApp(App).use(router).mount('#app')
       </div>
     </section>
 
-    <!-- FICHA DO JOGADOR -->
     <section class="ficha">
       <div class="section-header">
         <span class="section-line"/>
@@ -276,7 +271,6 @@ createApp(App).use(router).mount('#app')
       </div>
     </section>
 
-    <!-- PERSONAGENS -->
     <section class="characters">
       <div class="section-header">
         <span class="section-line"/>
@@ -318,7 +312,8 @@ import { RouterLink } from 'vue-router'
 .profile-avatar { width:80px; height:80px; border-radius:50%; background:var(--red-dim);
   border:2px solid var(--gold-border); display:flex; align-items:center; justify-content:center;
   font-family:var(--font-display); font-size:28px; font-weight:700; color:var(--gold); flex-shrink:0; }
-.profile-tag  { font-size:11px; letter-spacing:3px; text-transform:uppercase; color:var(--gold); margin-bottom:8px; }
+.profile-tag  { font-size:11px; letter-spacing:3px; text-transform:uppercase;
+  color:var(--gold); margin-bottom:8px; }
 .profile-nick { font-size:52px; letter-spacing:-1px; line-height:1; margin-bottom:16px; }
 .profile-meta { display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
 .meta-item    { display:flex; flex-direction:column; gap:2px; }
@@ -352,7 +347,7 @@ import { RouterLink } from 'vue-router'
   gap:20px; max-width:600px; }
 .character-card { display:block; border-radius:10px; overflow:hidden;
   border:1px solid var(--border); background:var(--bg-card);
-  transition:border-color .3s, transform .2s; text-decoration:none; }
+  transition:border-color .3s,transform .2s; text-decoration:none; }
 .character-card:hover { border-color:var(--gold-border); transform:translateY(-4px); }
 .card-img-wrap { position:relative; aspect-ratio:3/4; overflow:hidden; }
 .card-img-wrap img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .4s; }
@@ -433,16 +428,21 @@ import { RouterLink } from 'vue-router'
       <div class="two-col">
         <div class="icard">
           <h3>Lado Visível</h3>
-          <p>Age de forma charmosa, flertando e sorrindo com um tom levemente brincalhão.
-          Usa máscaras de garota inocente com frieza calculada para conseguir o que deseja.
-          Manipuladora e prática, planeja cada passo com antecedência.</p>
+          <p>
+            Age de forma charmosa, flertando e sorrindo com um tom levemente brincalhão.
+            Usa máscaras de garota inocente com frieza calculada para conseguir o que deseja.
+            Planeja cada passo com antecedência e não hesita em mentir quando necessário.
+          </p>
         </div>
         <div class="icard">
           <h3>Lado Oculto</h3>
-          <p>Profundamente triste e solitária. Carrega um ódio latente pela humanidade, mas não
-          age por crueldade pura — possui um código moral próprio e distorcido. Por baixo de tudo,
-          existe um lado que ainda quer redenção, expresso no carinho que sente por animais,
-          especialmente gatos.</p>
+          <p>
+            Profundamente triste e solitária. Por baixo da frieza existe alguém que
+            ainda quer ser pura — que demonstra carinho genuíno por animais, especialmente
+            gatos, e que em algum lugar ainda guarda a garota gentil que existia antes de
+            tudo acontecer. Ela não se considera uma pessoa boa e reage com hostilidade
+            quando alguém tenta chamá-la assim.
+          </p>
         </div>
       </div>
     </section>
@@ -496,29 +496,41 @@ import { RouterLink } from 'vue-router'
         <div class="te">
           <div class="tm"><span class="md"/><span class="ml"/></div>
           <div class="tb">
-            <h3>O Início</h3>
-            <p>Kurumi cresceu sendo o tipo de pessoa difícil de ignorar. Não pela beleza —
-            embora soubesse usar isso — mas por algo mais sutil, uma presença que fazia as
-            pessoas quererem se aproximar sem entender bem o porquê. Filha de uma família
-            abastada, aprendeu cedo a ler ambientes e pessoas antes de se expor a eles.</p>
-            <p>A única pessoa que nunca precisou ser lida era Sawa. Com ela não havia cálculo,
-            não havia performance. Era a única amizade que Kurumi tinha que não precisava de
-            manutenção — e exatamente por isso, foi a que a deusa escolheu usar contra ela.</p>
+            <h3>Antes de Tudo</h3>
+            <p>
+              Kurumi era o tipo de pessoa que fazia questão de não ser notada — não por
+              timidez, mas por escolha. Cresceu em uma família abastada, estudou bem, tinha
+              boas maneiras. Era gentil com animais, paciente com as pessoas ao redor, e
+              completamente despreparada para o que o mundo faria com ela.
+            </p>
+            <p>
+              Sawa era sua melhor amiga desde que se lembravam. Não havia cálculo nessa
+              amizade, não havia agenda. Era a única relação que Kurumi tinha que não
+              precisava de manutenção — existia e pronto. Isso tornava Sawa a pessoa mais
+              importante do mundo. E a mais vulnerável.
+            </p>
           </div>
         </div>
 
         <div class="te">
           <div class="tm"><span class="md"/><span class="ml"/></div>
           <div class="tb">
-            <h3>O Dom</h3>
-            <p>A entidade se apresentou de forma quase banal. Uma guardiã, disse ela — alguém
-            que a havia observado e reconhecido como especial entre os comuns. Ofereceu a ela
-            o <em>Zafkiel</em>, um anjo nascido do próprio tecido do tempo, capaz de manipulá-lo
-            através de balas disparadas por um relógio que se tornava arma.</p>
-            <p>O custo era direto: usar as balas consumia sua própria força vital. Para compensar,
-            ela precisaria absorver o tempo de vida de outros. Kurumi aceitou. A deusa apontou
-            alvos. Ela caçou sem questionar, porque confiava em quem a havia escolhido.
-            Esse foi o erro.</p>
+            <h3>A Guardiã</h3>
+            <p>
+              A deusa apareceu na vida de Kurumi como algo inevitável — não como uma
+              ameaça, mas como uma resposta. Apresentou-se como protetora, alguém que
+              a havia observado e reconhecido como especial entre os comuns. Ofereceu
+              a ela o <em>Zafkiel</em>, um anjo nascido do tecido do tempo, capaz de
+              manipulá-lo através de balas disparadas por um relógio que se tornava arma.
+            </p>
+            <p>
+              O custo era direto: usar as balas consumia sua própria força vital. Para
+              compensar, ela precisaria absorver o tempo de vida de outros. A deusa
+              apontou alvos — criaturas corrompidas que precisavam ser eliminadas,
+              disse ela. Kurumi aceitou, porque confiava em quem a havia escolhido.
+              Porque era gentil. Porque ainda não havia aprendido que gentileza
+              é exatamente o que predadores procuram.
+            </p>
           </div>
         </div>
 
@@ -526,29 +538,50 @@ import { RouterLink } from 'vue-router'
           <div class="tm"><span class="md red"/><span class="ml"/></div>
           <div class="tb">
             <h3>Sawa</h3>
-            <p>Kurumi nunca soube exatamente como a deusa fez. Memórias distorcidas, percepções
-            reescritas, uma urgência fabricada que não deixou espaço para pensar. Quando a névoa
-            passou, Sawa estava no chão.</p>
-            <p>Ela havia puxado o gatilho.</p>
-            <p>A deusa desapareceu sem explicação, sem rastro. E Kurumi ficou sozinha com o
-            Zafkiel nas mãos e um buraco no peito que nenhuma bala do relógio conseguia alcançar.
-            A garota que existia antes de tudo isso não morreu. Pior: ficou presa lá dentro,
-            olhando para fora através de um sorriso que aprendeu a nunca vacilar.</p>
+            <p>
+              Kurumi nunca soube exatamente como a deusa fez. Memórias reescritas,
+              percepções distorcidas, uma urgência fabricada com precisão cirúrgica.
+              Quando a névoa passou, Sawa estava no chão. Ela havia puxado o gatilho.
+            </p>
+            <p>
+              A deusa desapareceu sem explicação. Sem remorso, sem rastro, como se
+              nunca tivesse existido.
+            </p>
+            <p>
+              A garota gentil que existia antes de tudo isso não morreu de uma vez.
+              Foi algo mais lento — ela foi sendo enterrada viva sob camadas de
+              frieza que Kurumi construiu conscientemente, porque gentileza era
+              exatamente o que havia custado Sawa. O sorriso que ficou no lugar
+              não era o mesmo. Era uma ferramenta.
+            </p>
           </div>
         </div>
 
         <div class="te">
           <div class="tm"><span class="md"/><span class="ml"/></div>
           <div class="tb">
-            <h3>O Sistema</h3>
-            <p>Com o tempo — décadas, embora seu rosto não mostre — Kurumi desenvolveu um método.
-            Ela consome o tempo de vida de pessoas que julga ruins. Não é justiça, ela sabe disso.
-            É combustível. O Zafkiel precisa de tempo para operar, e ela precisa do Zafkiel para
-            um dia chegar até o momento em que Sawa morreu e desfazê-lo.</p>
-            <p>O objetivo central permanece: encontrar a deusa. E para isso, ela sabe que vai
-            precisar de algo além do Zafkiel — um poder capaz de localizar qualquer coisa em
-            qualquer ponto do Cosmos. Esse poder existe. Ela ainda não tem. Mas é apenas uma
-            questão de tempo.</p>
+            <h3>O Que Ficou</h3>
+            <p>
+              Com décadas acumuladas — embora seu rosto não mostre —, Kurumi
+              desenvolveu um sistema. Ela consome o tempo de vida de pessoas que
+              julga ruins: abusadores, predadores, quem faz aos outros o que a
+              deusa fez a ela. Não é justiça. É combustível. O Zafkiel precisa
+              de tempo para operar, e ela precisa do Zafkiel para um dia chegar
+              até o momento em que Sawa morreu e desfazê-lo.
+            </p>
+            <p>
+              Para investigar sem se expor ela usa os <strong>clones</strong> —
+              cópias geradas pelo Zafkiel, cada uma com mente e vontade próprias,
+              capazes de agir de forma completamente independente. Quando um clone
+              morre, essa versão deixa de existir com tudo que viveu e aprendeu.
+              É o método mais eficiente que encontrou. E o mais solitário.
+            </p>
+            <p>
+              O objetivo não mudou: encontrar a deusa. E para isso ela sabe que
+              precisará de algo além do Zafkiel — um poder capaz de localizar
+              qualquer ser em qualquer ponto do Cosmos. Esse poder existe.
+              Ela ainda não tem. Mas é apenas uma questão de tempo.
+            </p>
           </div>
         </div>
 
@@ -556,15 +589,27 @@ import { RouterLink } from 'vue-router'
           <div class="tm"><span class="md gold"/><span class="ml"/></div>
           <div class="tb">
             <h3>Atlas & Kyan</h3>
-            <p>Em meio às investigações, um dos clones cruzou com um portal que não estava
-            nos planos. Kurumi entrou pessoalmente — qualquer convergência de energia cósmica
-            é um dado relevante, e Atlas era exatamente isso.</p>
-            <p>Ela não sofreu os jogos do Deus do Caos da forma que a maioria sofreu. Enquanto
-            outros reagiam, ela observava. Os clones mapeavam o território enquanto o corpo
-            principal permanecia seguro nas margens. Foi nesse silêncio calculado que
-            <strong>Kyan</strong> a notou — e a titulou <em>Anjo do Deus da Destruição</em>.</p>
-            <p>Kurumi aceitou na hora. O título é uma ferramenta. Acesso, peso, liberdade de
-            movimento. Ela é pragmática demais para recusar algo útil por questão de princípio.</p>
+            <p>
+              Em meio às investigações, um dos clones cruzou com um portal que
+              não estava nos planos. Kurumi entrou pessoalmente — qualquer
+              convergência de energia cósmica é um dado relevante, e Atlas
+              era exatamente isso.
+            </p>
+            <p>
+              Ela não sofreu os jogos do Deus do Caos da forma que a maioria
+              sofreu. Enquanto outros reagiam, ela observava. Os clones mapeavam
+              o território enquanto o corpo principal permanecia seguro nas margens.
+              Foi nesse silêncio calculado que <strong>Kyan</strong> a notou —
+              um ser carregando um anjo do tempo sem pertencer a nenhum deus,
+              consumindo almas com método, movida por um propósito que corrói
+              tudo ao redor sem fazer barulho. Ele a titulou
+              <em>Anjo do Deus da Destruição</em>.
+            </p>
+            <p>
+              Kurumi aceitou na hora. O título é uma ferramenta. Acesso, peso,
+              liberdade de movimento. Ela é pragmática demais para recusar
+              algo útil por questão de princípio.
+            </p>
           </div>
         </div>
 
@@ -572,11 +617,15 @@ import { RouterLink } from 'vue-router'
           <div class="tm"><span class="md gold"/></div>
           <div class="tb">
             <h3>Agora</h3>
-            <p>Ela está no novo mundo. Sem aliados reais, sem vínculos que não possam ser
-            cortados se necessário. Os clones circulam, investigam, mapeiam. O sorriso está
-            no lugar certo.</p>
-            <p>Em algum lugar, a deusa que destruiu tudo que importava ainda existe.
-            E Kurumi tem tempo. Literalmente.</p>
+            <p>
+              Ela está no novo mundo. Sem aliados reais, sem vínculos que não
+              possam ser cortados se necessário. Os clones circulam, investigam,
+              mapeiam. O sorriso está no lugar certo.
+            </p>
+            <p>
+              Em algum lugar, a deusa que destruiu tudo que importava ainda existe.
+              E Kurumi tem tempo. Literalmente.
+            </p>
           </div>
         </div>
 
@@ -588,18 +637,15 @@ import { RouterLink } from 'vue-router'
       <div class="bh"><span class="bn">04</span><h2>Zafkiel — O Anjo do Tempo</h2></div>
 
       <p class="zdesc">
-        Anjo nascido do tecido do tempo. Se manifesta como um relógio gigante acompanhado de
-        dois revólveres antigos — um mosquete (ponteiro dos minutos) e uma pistola flintlock
-        (ponteiro das horas), com formato de armas do século XIX. Cada bala carregada de um
-        número do relógio possui um efeito diferente sobre o tempo. O custo de uso é sempre
-        o mesmo: força vital de Kurumi, representada pelo relógio em seu olho esquerdo
-        girando no sentido horário.
+        Anjo nascido do tecido do tempo. Se manifesta como um relógio gigante acompanhado
+        de dois revólveres antigos — um mosquete (ponteiro dos minutos) e uma pistola
+        flintlock (ponteiro das horas), com formato de armas do século XIX. Cada bala
+        carregada de um número do relógio possui um efeito diferente sobre o tempo.
+        O custo de uso é sempre o mesmo: força vital de Kurumi, representada pelo relógio
+        em seu olho esquerdo girando no sentido horário.
       </p>
 
-      <!-- LAYOUT RELÓGIO + INFO -->
       <div class="zaflayout">
-
-        <!-- RELÓGIO -->
         <div class="zclock-col">
           <ZafkielClock
             :active-bullet="current + 1"
@@ -607,7 +653,6 @@ import { RouterLink } from 'vue-router'
           />
         </div>
 
-        <!-- INFO DA BALA -->
         <div class="zinfo-col">
           <div class="znav">
             <button class="zbtn" @click="prev">←</button>
@@ -637,7 +682,6 @@ import { RouterLink } from 'vue-router'
         </div>
       </div>
 
-      <!-- LISTA RÁPIDA -->
       <div class="qlist">
         <button
           v-for="(b,i) in bullets" :key="i"
@@ -718,13 +762,12 @@ function goTo(i) { dir.value=i>current.value?'sl':'sr'; current.value=i }
 <style scoped>
 .kp { max-width:1100px; margin:0 auto; padding:0 32px 80px; }
 
-/* HERO */
 .hero { display:grid; grid-template-columns:300px 1fr; min-height:440px;
   margin:0 -32px 64px; border-bottom:1px solid var(--border); }
 .hero-img-wrap { position:relative; overflow:hidden; }
 .hero-img-wrap img { width:100%; height:100%; object-fit:cover; object-position:top; display:block; }
 .hero-img-fade { position:absolute; inset:0;
-  background:linear-gradient(to right,transparent 55%, var(--bg) 100%); }
+  background:linear-gradient(to right,transparent 55%,var(--bg) 100%); }
 .hero-content { display:flex; flex-direction:column; justify-content:flex-end;
   padding:48px 48px 48px 28px; }
 .hero-tag  { font-size:11px; letter-spacing:3px; text-transform:uppercase;
@@ -737,7 +780,6 @@ function goTo(i) { dir.value=i>current.value?'sl':'sr'; current.value=i }
 .stat-value.gold { color:var(--gold); }
 .stat-sep { width:1px; height:30px; background:var(--border); }
 
-/* NAV */
 .anav { display:flex; border:1px solid var(--border); border-radius:8px;
   overflow:hidden; margin-bottom:64px; }
 .anav a { flex:1; text-align:center; padding:12px 6px; font-size:11px; letter-spacing:1px;
@@ -746,14 +788,12 @@ function goTo(i) { dir.value=i>current.value?'sl':'sr'; current.value=i }
 .anav a:last-child { border-right:none; }
 .anav a:hover { background:var(--gold-dim); color:var(--gold); }
 
-/* BLOCOS */
 .block { margin-bottom:72px; padding-bottom:72px; border-bottom:1px solid var(--border); }
 .bh { display:flex; align-items:baseline; gap:16px; margin-bottom:40px; }
 .bn { font-family:var(--font-display); font-size:48px; font-weight:700;
   color:var(--gold-border); line-height:1; }
 .bh h2 { font-size:32px; letter-spacing:-.5px; }
 
-/* ICARD */
 .icard { background:var(--bg-surface); border:1px solid var(--border);
   border-radius:10px; padding:28px 32px; display:flex; flex-direction:column; gap:14px; }
 .icard h3 { font-size:13px; text-transform:uppercase; letter-spacing:1.5px;
@@ -762,20 +802,16 @@ function goTo(i) { dir.value=i>current.value?'sl':'sr'; current.value=i }
 .icard strong { color:var(--text-h); }
 .two-col { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
 
-/* DATA */
 .data-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
-.dtable { background:var(--bg-surface); border:1px solid var(--border);
-  border-radius:10px; overflow:hidden; }
+.dtable { background:var(--bg-surface); border:1px solid var(--border); border-radius:10px; overflow:hidden; }
 .dtable.full { grid-column:1/-1; }
 .dth { background:var(--gold-dim); border-bottom:1px solid var(--gold-border);
   padding:12px 20px; font-size:11px; text-transform:uppercase; letter-spacing:2px; color:var(--gold); }
-.dr { display:flex; gap:16px; padding:14px 20px;
-  border-bottom:1px solid var(--border); align-items:flex-start; }
+.dr { display:flex; gap:16px; padding:14px 20px; border-bottom:1px solid var(--border); align-items:flex-start; }
 .dr:last-child { border-bottom:none; }
 .dk { font-size:14px; color:var(--text-h); font-weight:500; min-width:160px; flex-shrink:0; }
 .dv { font-size:14px; color:var(--text); line-height:1.5; }
 
-/* TIMELINE */
 .timeline { display:flex; flex-direction:column; }
 .te { display:flex; gap:24px; }
 .tm { display:flex; flex-direction:column; align-items:center; flex-shrink:0; padding-top:4px; }
@@ -792,10 +828,8 @@ function goTo(i) { dir.value=i>current.value?'sl':'sr'; current.value=i }
 .tb em { color:var(--gold); font-style:italic; }
 .tb strong { color:var(--text-h); }
 
-/* ZAFKIEL */
 .zdesc { font-size:15px; color:var(--text); line-height:1.7; margin-bottom:32px; max-width:720px; }
-.zaflayout { display:grid; grid-template-columns:300px 1fr; gap:48px;
-  align-items:center; margin-bottom:32px; }
+.zaflayout { display:grid; grid-template-columns:300px 1fr; gap:48px; align-items:center; margin-bottom:32px; }
 .zclock-col { position:sticky; top:24px; }
 .zinfo-col  { display:flex; flex-direction:column; gap:20px; }
 .znav { display:flex; align-items:center; gap:16px; }
@@ -808,11 +842,9 @@ function goTo(i) { dir.value=i>current.value?'sl':'sr'; current.value=i }
 .zbullet { background:var(--bg-surface); border:1px solid var(--border);
   border-radius:12px; padding:32px; display:flex; flex-direction:column; gap:12px; }
 .zbmeta { display:flex; align-items:center; gap:14px; }
-.zbnum  { font-family:var(--font-display); font-size:44px; font-weight:700;
-  color:var(--gold-border); line-height:1; }
+.zbnum  { font-family:var(--font-display); font-size:44px; font-weight:700; color:var(--gold-border); line-height:1; }
 .zbhb   { font-size:12px; color:var(--text-muted); font-family:monospace; }
-.zbname { font-family:var(--font-display); font-size:40px; color:var(--text-h);
-  letter-spacing:-1px; margin:0; }
+.zbname { font-family:var(--font-display); font-size:40px; color:var(--text-h); letter-spacing:-1px; margin:0; }
 .zbeffect { font-size:15px; color:var(--text); line-height:1.7; }
 .zbnote { font-size:13px; color:var(--gold); background:var(--gold-dim);
   border:1px solid var(--gold-border); border-radius:6px; padding:12px 16px; }
@@ -826,16 +858,14 @@ function goTo(i) { dir.value=i>current.value?'sl':'sr'; current.value=i }
 .qbtn  { background:var(--bg-surface); border:1px solid var(--border); border-radius:6px;
   padding:8px 10px; cursor:pointer; text-align:left;
   transition:border-color .2s,background .2s; display:flex; flex-direction:column; gap:2px; }
-.qbtn:hover, .qbtn.active { border-color:var(--gold-border); background:var(--gold-dim); }
+.qbtn:hover,.qbtn.active { border-color:var(--gold-border); background:var(--gold-dim); }
 .qnum  { font-size:10px; color:var(--gold); font-family:monospace; }
 .qname { font-size:12px; color:var(--text-h); font-weight:500; }
 
-/* OBJETIVO */
 .obj-block { border:none; padding-bottom:0; }
 .obj-inner { background:linear-gradient(135deg,var(--red-dim),var(--gold-dim));
   border:1px solid var(--gold-border); border-radius:12px; padding:40px 48px; text-align:center; }
-.obj-label { font-size:11px; text-transform:uppercase; letter-spacing:3px;
-  color:var(--gold); margin-bottom:16px; }
+.obj-label { font-size:11px; text-transform:uppercase; letter-spacing:3px; color:var(--gold); margin-bottom:16px; }
 .obj-text  { font-family:var(--font-display); font-size:22px; color:var(--text-h);
   line-height:1.5; max-width:600px; margin:0 auto 20px; }
 .obj-tag   { font-size:12px; color:var(--text-muted); background:var(--bg-surface);
@@ -845,15 +875,12 @@ function goTo(i) { dir.value=i>current.value?'sl':'sr'; current.value=i }
 .back-link { font-size:14px; color:var(--text-muted); transition:color .2s; }
 .back-link:hover { color:var(--gold); }
 
-/* TRANSIÇÕES DO CARROSSEL */
-.sl-enter-active,.sl-leave-active,.sr-enter-active,.sr-leave-active {
-  transition:all .28s ease; }
+.sl-enter-active,.sl-leave-active,.sr-enter-active,.sr-leave-active { transition:all .28s ease; }
 .sl-enter-from { transform:translateX(28px); opacity:0; }
 .sl-leave-to   { transform:translateX(-28px); opacity:0; }
 .sr-enter-from { transform:translateX(-28px); opacity:0; }
 .sr-leave-to   { transform:translateX(28px); opacity:0; }
 
-/* RESPONSIVO */
 @media(max-width:900px){
   .hero { grid-template-columns:1fr; min-height:auto; margin:0 0 48px; }
   .hero-img-wrap { height:280px; }
@@ -866,7 +893,6 @@ function goTo(i) { dir.value=i>current.value?'sl':'sr'; current.value=i }
   .zaflayout { grid-template-columns:1fr; }
   .zclock-col { position:static; max-width:260px; margin:0 auto; }
   .qlist { grid-template-columns:repeat(4,1fr); }
-  .anav a { font-size:10px; padding:10px 4px; }
 }
 @media(max-width:600px){
   .kp { padding:0 16px 60px; }
@@ -880,38 +906,27 @@ function goTo(i) { dir.value=i>current.value?'sl':'sr'; current.value=i }
 
 ## `src/components/ZafkielClock.vue`
 
-> Arquivo entregue separadamente (`ZafkielClock.vue`). Salvar em `src/components/`.
+Arquivo entregue separadamente. Salvar em `src/components/`.
+
+**Correção aplicada:** ambos os ponteiros (mosquete e flintlock) apontam para o mesmo ângulo — o numeral da bala ativa. O ponteiro longo (mosquete) é mais fino e comprido; o curto (flintlock) é mais grosso e tem mecanismo de pederneira lateral. A diferença visual entre eles vem do design da arma, não da direção.
 
 ---
 
 ## Notas para o IA local
 
-### Relógio — como funciona
 | Elemento | Comportamento |
 |---|---|
-| Ponteiro curto (flintlock/horas) | Aponta para o numeral romano da bala ativa |
-| Ponteiro longo (mosquete/minutos) | Fica 180° oposto — tensão visual |
-| Arco dourado na borda | Cresce de 1/12 a 12/12 conforme a bala |
-| Numeral romano ativo | Maior, dourado brilhante, com halo |
-| Animação de troca | `cubic-bezier(0.34,1.56,0.64,1)` — overshoot suave, como um relógio mecânico real |
-| Ticks dos quartos | Círculos dourados em III, VI, IX, XII |
+| Ambos os ponteiros | Apontam para o numeral romano da bala ativa |
+| Mosquete (longo) | Cano fino, bocal dourado, coronha alargada |
+| Flintlock (curto) | Cano grosso, mecanismo de pederneira lateral, coronha larga |
+| Arco dourado | Cresce de 1/12 a 12/12 |
+| Numeral ativo | Maior, dourado brilhante, com halo |
+| Transição | `cubic-bezier(0.34,1.56,0.64,1)` — overshoot mecânico |
 
-### Design do relógio
-- Ponteiro longo = mosquete: cano fino, bocal, coronha alargada
-- Ponteiro curto = flintlock: cano curto e grosso, mecanismo de pederneira lateral, coronha larga
-- Face escura com gradiente radial do centro
-- Pétalas decorativas nos quartos (estilo relógio ornamental)
-- Ticks construídos via `onMounted` — não reativos, pois são estáticos
-
-### Props do ZafkielClock
+**Props do ZafkielClock:**
 ```ts
-activeBullet: Number // 1 a 12 — qual bala está selecionada
-bulletName:   String // Nome da bala exibido no interior do relógio
+activeBullet: Number  // 1–12
+bulletName:   String  // exibido no centro do relógio
 ```
 
-### Imagens necessárias
-Apenas `src/assets/kurumi/profile.jpg` — foto da Kurumi para o hero e o card.
-Nenhuma imagem de bala é necessária — substituídas pelo relógio animado.
-
-### Rasiel
-Deliberadamente omitido — será desenvolvido como arco futuro no RP.
+**Única imagem necessária:** `src/assets/kurumi/profile.jpg`

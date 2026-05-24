@@ -8,7 +8,7 @@
         <div class="hero-img-fade" />
       </div>
       <div class="hero-content">
-        <p class="hero-tag">Entidade · Anjo do Deus da Destruição</p>
+        <p class="hero-tag">Entidade · Anjo do Tempo</p>
         <h1 class="hero-name">Kurumi</h1>
         <div class="hero-stats">
           <div class="stat">
@@ -68,6 +68,11 @@
       <div class="bh"><span class="bn">02</span><h2>Dados do Personagem</h2></div>
       <div class="data-grid">
 
+        <div class="dtable full">
+          <div class="dth">Aparência</div>
+          <div class="dr"><span class="dv">Kurumi é elegante e tem maneiras muito educadas. Ela tem pele de marfim e longos cabelos pretos geralmente amarrados em longas caudas gêmeas. Seu olho direito é tingido de vermelho, enquanto seu olho esquerdo aparece como um mostrador de relógio inorgânico e dourado. As posições dos ponteiros do relógio representam seu "tempo" restante e são cobertas por sua franja, que só são reveladas quando ela se transforma em sua forma de Anjo.</span></div>
+        </div>
+
         <div class="dtable">
           <div class="dth">Gostos</div>
           <div class="dr"><span class="dk">Black Forest Cake</span><span class="dv">Comida favorita oficial</span></div>
@@ -85,7 +90,6 @@
         <div class="dtable">
           <div class="dth">Medos</div>
           <div class="dr"><span class="dk">Perder a humanidade</span><span class="dv">Teme se tornar um monstro sem esperança de redenção</span></div>
-          <div class="dr"><span class="dk">Herança chunibyo</span><span class="dv">Sente vergonha dos hábitos de delírios de grandeza do passado</span></div>
           <div class="dr"><span class="dk">Perder o controle dos clones</span><span class="dv">Os clones possuem livre-arbítrio — teme que desobedeçam</span></div>
         </div>
 
@@ -112,59 +116,29 @@
         <div class="te">
           <div class="tm"><span class="md" /><span class="ml" /></div>
           <div class="tb">
-            <h3>O Início</h3>
-            <p>Kurumi cresceu sendo o tipo de pessoa difícil de ignorar. Não pela beleza —
-            embora soubesse usar isso — mas por algo mais sutil, uma presença que fazia as
-            pessoas quererem se aproximar sem entender bem o porquê. Filha de uma família
-            abastada, aprendeu cedo a ler ambientes e pessoas antes de se expor a eles.</p>
-            <p>A única pessoa que nunca precisou ser lida era Sawa. Com ela não havia cálculo,
-            não havia performance. Era a única amizade que Kurumi tinha que não precisava de
-            manutenção — e exatamente por isso, foi a que a deusa escolheu usar contra ela.</p>
-          </div>
-        </div>
-
-        <div class="te">
-          <div class="tm"><span class="md" /><span class="ml" /></div>
-          <div class="tb">
-            <h3>O Dom</h3>
-            <p>A entidade se apresentou de forma quase banal. Uma guardiã, disse ela — alguém
-            que a havia observado e reconhecido como especial entre os comuns. Ofereceu a ela
-            o <em>Zafkiel</em>, um anjo nascido do próprio tecido do tempo, capaz de manipulá-lo
-            através de balas disparadas por um relógio que se tornava arma.</p>
-            <p>O custo era direto: usar as balas consumia sua própria força vital. Para compensar,
-            ela precisaria absorver o tempo de vida de outros. Kurumi aceitou. A deusa apontou
-            alvos. Ela caçou sem questionar, porque confiava em quem a havia escolhido.
-            Esse foi o erro.</p>
+            <h3>Antes de Tudo</h3>
+            <p>Kurumi viveu como uma pessoa normal. Era bondosa, sempre tentava ajudar os outros, o tipo de pessoa que não conseguia ficar parada vendo alguém precisar de algo. Mas por algum motivo isso nunca foi suficiente para fazer as pessoas ficarem — ela nunca teve muitos amigos. A única pessoa em quem realmente confiava era Sawa, sua melhor amiga, e era o suficiente. Com Sawa, não precisava de mais nada.</p>
           </div>
         </div>
 
         <div class="te">
           <div class="tm"><span class="md red" /><span class="ml" /></div>
           <div class="tb">
-            <h3>Sawa</h3>
-            <p>Kurumi nunca soube exatamente como a deusa fez. Memórias distorcidas, percepções
-            reescritas, uma urgência fabricada que não deixou espaço para pensar. Quando a névoa
-            passou, Sawa estava no chão.</p>
-            <p>Ela havia puxado o gatilho.</p>
-            <p>A deusa desapareceu sem explicação, sem rastro. E Kurumi ficou sozinha com o
-            Zafkiel nas mãos e um buraco no peito que nenhuma bala do relógio conseguia alcançar.
-            A garota que existia antes de tudo isso não morreu. Pior: ficou presa lá dentro,
-            olhando para fora através de um sorriso que aprendeu a nunca vacilar.</p>
+            <h3>A Guardiã e Sawa</h3>
+            <p>A deusa entrou na vida de Kurumi de forma gradual. Não chegou como ameaça — chegou como reconhecimento. Disse que a havia observado por muito tempo e que via nela algo que os outros não conseguiam enxergar. Ofereceu o Zafkiel, um anjo nascido do tecido do tempo, capaz de manipulá-lo através de balas disparadas por um relógio que se tornava arma. O custo era direto: cada disparo consumia a própria vida de Kurumi, que precisaria absorver o tempo de vida de outros para se manter.</p>
+            <p>O que a deusa queria de verdade era controle. E para ter controle total sobre Kurumi, precisava destruir tudo que ainda a ancorava em quem ela era. Sawa era esse ancoro — a única pessoa que poderia olhar para Kurumi no meio de tudo aquilo e fazê-la questionar o que estava fazendo.</p>
+            <p>Então a deusa a eliminou. Manipulou Kurumi com memórias distorcidas e percepções reescritas até que ela mesma puxou o gatilho, sem entender o que estava fazendo. Quando voltou a si, Sawa estava morta.</p>
+            <p>A deusa tinha o que queria: uma Kurumi quebrada, sem ninguém, completamente dependente do Zafkiel e sem mais nada pelo que voltar atrás. O que não calculou foi que pessoas quebradas desse jeito não ficam submissas — ficam perigosas. Kurumi virou a ferramenta contra quem a forjou. A deusa desapareceu antes de colher o resultado.</p>
           </div>
         </div>
 
         <div class="te">
           <div class="tm"><span class="md" /><span class="ml" /></div>
           <div class="tb">
-            <h3>O Sistema</h3>
-            <p>Com o tempo — décadas, embora seu rosto não mostre — Kurumi desenvolveu um método.
-            Ela consome o tempo de vida de pessoas que julga ruins. Não é justiça, ela sabe disso.
-            É combustível. O Zafkiel precisa de tempo para operar, e ela precisa do Zafkiel para
-            um dia chegar até o momento em que Sawa morreu e desfazê-lo.</p>
-            <p>O objetivo central permanece: encontrar a deusa. E para isso, ela sabe que vai
-            precisar de algo além do Zafkiel — um poder capaz de localizar qualquer coisa em
-            qualquer ponto do Cosmos. Esse poder existe. Ela ainda não tem. Mas é apenas uma
-            questão de tempo.</p>
+            <h3>O Que Ficou</h3>
+            <p>Com o tempo — décadas, embora seu rosto não mostre — Kurumi desenvolveu um método próprio. Ela consome o tempo de vida de pessoas que julga ruins. Não chama de justiça. É combustível para o Zafkiel, e o Zafkiel é o único caminho que enxerga para voltar ao momento em que Sawa morreu e desfazê-lo.</p>
+            <p>Para investigar sem se expor diretamente ela usa os clones — cópias geradas pelo Zafkiel com mente e vontade próprias, cada uma capaz de agir de forma completamente independente. Quando um clone morre, essa versão deixa de existir com tudo que viveu. Kurumi usa isso sem hesitar, mas sabe o que está fazendo.</p>
+            <p>O objetivo não mudou nunca: encontrar a deusa. Para isso vai precisar de um poder além do Zafkiel — algo capaz de localizar qualquer ser em qualquer ponto do Cosmos. Esse poder existe. Ela ainda não tem. Mas é uma questão de tempo.</p>
           </div>
         </div>
 
@@ -172,15 +146,9 @@
           <div class="tm"><span class="md gold" /><span class="ml" /></div>
           <div class="tb">
             <h3>Atlas & Kyan</h3>
-            <p>Em meio às investigações, um dos clones cruzou com um portal que não estava
-            nos planos. Kurumi entrou pessoalmente — qualquer convergência de energia cósmica
-            é um dado relevante, e Atlas era exatamente isso.</p>
-            <p>Ela não sofreu os jogos do Deus do Caos da forma que a maioria sofreu. Enquanto
-            outros reagiam, ela observava. Os clones mapeavam o território enquanto o corpo
-            principal permanecia seguro nas margens. Foi nesse silêncio calculado que
-            <strong>Kyan</strong> a notou — e a titulou <em>Anjo do Deus da Destruição</em>.</p>
-            <p>Kurumi aceitou na hora. O título é uma ferramenta. Acesso, peso, liberdade de
-            movimento. Ela é pragmática demais para recusar algo útil por questão de princípio.</p>
+            <p>Durante uma investigação, um dos clones cruzou com um portal. Kurumi entrou pessoalmente — qualquer concentração de energia cósmica é um dado relevante, e Atlas era exatamente isso.</p>
+            <p>Em Atlas ela preferiu ficar escondida, deixando os clones circularem enquanto observava de longe. Foi sobrevivendo silenciosamente dessa forma que acabou chamando a atenção de Kyan.</p>
+            <p>Ele fez uma proposta. Kurumi ouviu, considerou, e aceitou — o título de Anjo do Tempo abre portas que sozinha levaria muito mais tempo para abrir. E tempo é exatamente o que ela não quer desperdiçar.</p>
           </div>
         </div>
 
@@ -188,11 +156,8 @@
           <div class="tm"><span class="md gold" /></div>
           <div class="tb">
             <h3>Agora</h3>
-            <p>Ela está no novo mundo. Sem aliados reais, sem vínculos que não possam ser
-            cortados se necessário. Os clones circulam, investigam, mapeiam. O sorriso está
-            no lugar certo.</p>
-            <p>Em algum lugar, a deusa que destruiu tudo que importava ainda existe.
-            E Kurumi tem tempo. Literalmente.</p>
+            <p>Ela chegou ao novo mundo sem planos de ficar. Os clones circulam, investigam, coletam o que precisam. Ela continua de onde parou.</p>
+            <p>A deusa ainda existe em algum lugar. E Kurumi tem tempo.</p>
           </div>
         </div>
 
@@ -203,14 +168,19 @@
     <section id="zafkiel" class="block">
       <div class="bh"><span class="bn">04</span><h2>Zafkiel — O Anjo do Tempo</h2></div>
 
-      <p class="zdesc">
-        Anjo nascido do tecido do tempo. Se manifesta como um relógio gigante acompanhado de
-        dois revólveres antigos — um mosquete (ponteiro dos minutos) e uma pistola flintlock
-        (ponteiro das horas), com formato de armas do século XIX. Cada bala carregada de um
-        número do relógio possui um efeito diferente sobre o tempo. O custo de uso é sempre
-        o mesmo: força vital de Kurumi, representada pelo relógio em seu olho esquerdo
-        girando no sentido horário.
-      </p>
+      <div class="zdesc-wrap">
+        <p class="zdesc">
+          Anjo nascido do tecido do tempo. Se manifesta como um relógio gigante acompanhado de
+          dois revólveres antigos — um mosquete (ponteiro dos minutos) e uma pistola flintlock
+          (ponteiro das horas), com formato de armas do século XIX. Cada bala carregada de um
+          número do relógio possui um efeito diferente sobre o tempo. O custo de uso é sempre
+          o mesmo: força vital de Kurumi, representada pelo relógio em seu olho esquerdo
+          girando no sentido horário.
+        </p>
+        <div class="zdesc-gif">
+          <img src="@/assets/kurumi/Zafkiel.gif" alt="Zafkiel" />
+        </div>
+      </div>
 
       <!-- LAYOUT RELÓGIO + INFO -->
       <div class="zaflayout">
@@ -402,7 +372,10 @@ function goTo(i: number) { dir.value=i>current.value?'sl':'sr'; current.value=i 
 .tb em { color:var(--gold); font-style:italic; }
 .tb strong { color:var(--text-h); }
 
-.zdesc { font-size:15px; color:var(--text); line-height:1.7; margin-bottom:32px; max-width:720px; }
+.zdesc-wrap { display:grid; grid-template-columns:1fr 280px; gap:24px; margin-bottom:32px; align-items:start; }
+.zdesc { font-size:15px; color:var(--text); line-height:1.7; max-width:720px; }
+.zdesc-gif { border-radius:8px; overflow:hidden; border:1px solid var(--gold-border); margin-top:-24px; }
+.zdesc-gif img { width:100%; height:auto; display:block; }
 .zaflayout { display:grid; grid-template-columns:300px 1fr; gap:48px;
   align-items:center; margin-bottom:32px; }
 .zclock-col { position:sticky; top:24px; }
@@ -473,6 +446,10 @@ function goTo(i: number) { dir.value=i>current.value?'sl':'sr'; current.value=i 
   .zclock-col { position:static; max-width:260px; margin:0 auto; }
   .qlist { grid-template-columns:repeat(4,1fr); }
   .anav a { font-size:10px; padding:10px 4px; }
+}
+@media(max-width:700px){
+  .zdesc-wrap { grid-template-columns:1fr; }
+  .zdesc-gif { max-width:120px; margin:0 auto; }
 }
 @media(max-width:600px){
   .kp { padding:0 16px 60px; }

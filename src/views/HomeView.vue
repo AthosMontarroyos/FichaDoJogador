@@ -158,7 +158,7 @@
           </div>
           <div class="card-info">
             <span class="card-name">Kurumi</span>
-            <span class="card-type">Entidade · Anjo da Destruição</span>
+            <span class="card-type">Entidade · Anjo do Tempo</span>
           </div>
         </RouterLink>
       </div>
