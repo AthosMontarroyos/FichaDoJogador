@@ -71,16 +71,16 @@
 
         <div class="dtable">
           <div class="dth">Gostos</div>
-          <div class="dr"><span class="dk">Black Forest Cake</span><span class="dv">Comida favorita oficial</span></div>
+          <div class="dr"><span class="dk">Black Forest Cake</span><span class="dv">Comida favorita</span></div>
           <div class="dr"><span class="dk">Sobremesas doces</span><span class="dv">Gosta de doces em geral</span></div>
-          <div class="dr"><span class="dk">Gatos & animais pequenos</span><span class="dv">Afinidade especial — interage frequentemente com eles</span></div>
-          <div class="dr"><span class="dk">Armas & armamento</span><span class="dv">Um de seus hobbies principais</span></div>
+          <div class="dr"><span class="dk">Gatos & animais pequenos</span><span class="dv">gosta muito deles, principalmente gatos</span></div>
+          <div class="dr"><span class="dk">Armas & armamento</span><span class="dv">são só hobbies</span></div>
         </div>
 
         <div class="dtable">
           <div class="dth">Desgostos</div>
           <div class="dr"><span class="dk">Humanidade (em geral)</span><span class="dv">Ódio latente desenvolvido ao longo dos anos</span></div>
-          <div class="dr"><span class="dk">Ser chamada de "boa pessoa"</span><span class="dv">Reação hostil imediata — não se considera uma pessoa boa</span></div>
+          <div class="dr"><span class="dk">Ser chamada de "boa pessoa"</span><span class="dv">Não se considera uma pessoa boa</span></div>
         </div>
 
         <div class="dtable">
