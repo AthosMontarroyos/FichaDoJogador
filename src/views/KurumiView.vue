@@ -98,7 +98,7 @@
           <div class="dth">Hobbies</div>
           <div class="dr"><span class="dk">Armas & armamento</span><span class="dv">Estudo e coleção</span></div>
           <div class="dr"><span class="dk">Sobremesas</span><span class="dv">Preparo e degustação de doces</span></div>
-          <div class="dr"><span class="dk">Cuidar de gatos</span><span class="dv">Interação com felinos e pequenos animais</span></div>
+          <div class="dr"><span class="dk">Cuidar de gatos</span><span class="dv">Interação com gatinhos </span></div>
         </div>
 
       </div>
